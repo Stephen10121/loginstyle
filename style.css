@@ -1,0 +1,12 @@
+/*
+font-family: 'Catamaran', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+*/
+
+* {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+}
