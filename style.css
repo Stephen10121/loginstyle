@@ -55,23 +55,20 @@ header .header-cases {
 header .login-signup {
     display: none;
     margin: 20px 0 0 20px;
-    margin-right: 60px;
-    clear: both;
+    width: 700px;
+    height: 70px;
 }
 
-header .login-signup input {
-    clear: both;
-}
 
 #signup-button {
-    display: block;
-    margin-bottom: -50px;
+}
+
+#logout-button {
+    float: right;
+    display: none;
 }
 
 .logoutform {
-    display: block;
-    margin: 20px 0px 0 20px;
-    float: right;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -108,6 +105,7 @@ header .login-signup input {
     header .login-signup {
         display: block;
         float: right;
+        margin-top: 0px;
     }
 
     #login-for-phone {
@@ -115,12 +113,13 @@ header .login-signup input {
     }
 
     .loginform {
-        margin-right: 80px;
-        padding: ;
+        display: inline-block;
+        margin-left: -50px;
     }
 
     #signup-button {
-        float: right;
+        display: inline-block;
+        margin-top: -1px;
     }
 
 

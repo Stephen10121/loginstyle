@@ -19,15 +19,17 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="login-signup">
-                <form action="includes/login.inc.php" method="post" id="loginform" class="loginform">
+                <ul>
+                <li><form action="includes/login.inc.php" method="post" id="loginform" class="loginform">
                     <input type="text" name="mailuid" placeholder="Username/E-mail..." class="textbox">
                     <input type="password" name="pwd" placeholder="Password..." class="textbox">
                     <button type="submit" class="button" name="login-submit" >Login</button>
-                </form>
-                <form action="includes/logout.inc.php" method="post" id="logoutform" class="logoutform">
-                    <button type="submit" class="button" name="logout-submit">Logout</button>
-                </form>
-                <a href="signup.php" class="button" id="signup-button">Signup</a>
+                </form></li>
+                <li><form action="includes/logout.inc.php" method="post" id="logoutform" class="logoutform">
+                    <button type="submit" class="button" name="logout-submit" id="logout-button">Logout</button>
+                </form></li>
+                <li><a href="signup.php" class="button" id="signup-button">Signup</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -44,7 +46,7 @@
                     <h3>LOGIN</h3>
                 </div>
             </a>
-            <a href="#">
+            <a href="signup.html">
                 <div class="index-boxlink-rectangle">
                     <h3>SIGNUP</h3>
                 </div>
