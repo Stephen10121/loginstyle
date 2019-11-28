@@ -122,6 +122,10 @@ header .login-signup {
         margin-top: -1px;
     }
 
+    .links-cases li a{
+        display: block;
+    }
+
 
 }
 
@@ -210,7 +214,7 @@ footer ul li a {
     line-height: 40px;
 }
 
-.links-cases {
+.links-cases li a{
     display: none;
 }
 
