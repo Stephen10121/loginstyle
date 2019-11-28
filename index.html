@@ -10,16 +10,87 @@
 </head>
 <body>
     <header>
+        <a href="index.html" class="header-brand">Cloud Storage</a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <form action="includes/logout.inc.php" method="post" id="logoutform" class="logoutform">
+                <button type="submit" name="logout-submit" >Logout</button>
+            </form>
+            <form action="includes/login.inc.php" method="post" id="loginform" class="loginform">
+                <input type="text" name="mailuid" placeholder="Username/E-mail..." class="textbox">
+                <input type="password" name="pwd" placeholder="Password..." class="textbox">
+                <button type="submit" name="login-submit" >Login</button>
+            </form>
+            <a href="signup.php" class="header-cases">Signup</a>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="index-banner">
+            <div class="vertical-center">
+                <h2>need some<br>space?</h2>
+                <h1>This is the storage you need!</h1>
+            </div>
+        </section>
+        <section class="index-links">
+            <a href="">
+                <div class="index-boxlink-square">
+                    <h3>LOGIN</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-boxlink-rectangle">
+                    <h3>SIGNUP</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-boxlink-square">
+                    <h3>SERVICES</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-boxlink-rectangle">
+                    <h3>OTHER WEBSITES</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-boxlink-square">
+                    <h3>ABOUT</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-boxlink-square">
+                    <h3>CONTACT</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Undefined</a></li>
+        </ul>
+        <ul>
+                <li>Undefined</li>
+                <li><a href="">Undefined</a></li>
+                <li><a href="">Undefined</a></li>
+                <li><a href="">Undefined</a></li>
+                <li><a href="">Undefined</a></li>
+            </ul>
+            <div class="footer-sm">
+                <a href="">
+                    <img src="img/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://github.com/Stephen10121">
+                    <img src="img/github.png" alt="Github">
+                </a>
+            </div>
+    </footer>
 </body>
 </html>
