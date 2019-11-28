@@ -7,6 +7,7 @@
     <title>Test For Styling</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Cormorant+Garamond&display=swap" rel="stylesheet">
+    <script src="sript.js"></script>
 </head>
 <body>
     <header>
@@ -17,15 +18,17 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <form action="includes/logout.inc.php" method="post" id="logoutform" class="logoutform">
-                <button type="submit" name="logout-submit" >Logout</button>
-            </form>
-            <form action="includes/login.inc.php" method="post" id="loginform" class="loginform">
-                <input type="text" name="mailuid" placeholder="Username/E-mail..." class="textbox">
-                <input type="password" name="pwd" placeholder="Password..." class="textbox">
-                <button type="submit" name="login-submit" >Login</button>
-            </form>
-            <a href="signup.php" class="header-cases">Signup</a>
+            <div class="login-signup">
+                <form action="includes/login.inc.php" method="post" id="loginform" class="loginform">
+                    <input type="text" name="mailuid" placeholder="Username/E-mail..." class="textbox">
+                    <input type="password" name="pwd" placeholder="Password..." class="textbox">
+                    <button type="submit" class="button" name="login-submit" >Login</button>
+                </form>
+                <form action="includes/logout.inc.php" method="post" id="logoutform" class="logoutform">
+                    <button type="submit" class="button" name="logout-submit">Logout</button>
+                </form>
+                <a href="signup.php" class="button" id="signup-button">Signup</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -37,7 +40,7 @@
         </section>
         <section class="index-links">
             <a href="#">
-                <div class="index-boxlink-square">
+                <div class="index-boxlink-square" id="login-for-phone">
                     <h3>LOGIN</h3>
                 </div>
             </a>
@@ -69,14 +72,14 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Home</a></li>
+        <ul class="footer-main-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Undefined</a></li>
         </ul>
-        <ul>
+        <ul class="links-cases">
                 <li>Undefined</li>
                 <li><a href="#">Undefined</a></li>
                 <li><a href="#">Undefined</a></li>
@@ -91,7 +94,7 @@
                     <img src="img/github.png" alt="Github">
                 </a>
                 <a href="#">
-                    <img src="img/github.png" alt="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
                 </a>
             </div>
     </footer>

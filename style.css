@@ -45,18 +45,85 @@ header nav ul li a {
     font-family: Catamaran;
     font-size: 16px;
     color:#111;
+    text-transform: uppercase;
 }
 
 header .header-cases {
     display: none;
 }
 
-header .loginform {
+header .login-signup {
     display: none;
+    margin: 20px 0 0 20px;
+    margin-right: 60px;
+    clear: both;
 }
 
-header .logoutform {
-    display:none;
+header .login-signup input {
+    clear: both;
+}
+
+#signup-button {
+    display: block;
+    margin-bottom: -50px;
+}
+
+.logoutform {
+    display: block;
+    margin: 20px 0px 0 20px;
+    float: right;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    header .header-brand {
+        margin: 31px 0 ;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+        line-height: 30px;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0 20px;
+        float: left;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding:0 16px;
+    }
+    
+    header nav ul li a {
+        font-family: Catamaran;
+        font-size: 16px;
+        color:#111;
+        line-height: 60px;
+    }
+
+    header .login-signup {
+        display: block;
+        float: right;
+    }
+
+    #login-for-phone {
+        display: none;
+    }
+
+    .loginform {
+        margin-right: 80px;
+        padding: ;
+    }
+
+    #signup-button {
+        float: right;
+    }
+
+
 }
 
 /*INDEX*/
@@ -117,3 +184,66 @@ header .logoutform {
 }
 
 /*FOOTER*/
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 24px;
+    color:#fff;
+    line-height: 40px;
+}
+
+.links-cases {
+    display: none;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*TEXTBOX AND BUTTON*/
+
+.button {
+    font-family: Catamaran;
+    font-size: 16px;
+    color:#111;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+}
+
+.textbox {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*BACK TO FOOTER*/

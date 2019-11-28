@@ -1,0 +1,1 @@
+alert ("Not a tablet version");
